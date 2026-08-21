@@ -25,28 +25,16 @@ export const SOSBellIllustration: React.FC<{ className?: string }> = ({ classNam
       </filter>
     </defs>
     
-    <!-- Ambient Glow Circle -->
     <circle cx="60" cy="60" r="48" fill="url(#bellGlow)" />
     
     <g filter="url(#shadowBell)">
-      <!-- Bell Top Hanger -->
       <path d="M54 22C54 18.6863 56.6863 16 60 16C63.3137 16 66 18.6863 66 22V26H54V22Z" fill="#ca8a04" />
-      
-      <!-- Bell Main Dome 3D Body -->
       <path d="M60 25C44 25 36 44 34 68C33 72 26 76 26 80C26 84 32 86 60 86C88 86 94 84 94 80C94 76 87 72 86 68C84 44 76 25 60 25Z" fill="url(#bellBody)" />
-      
-      <!-- Bell 3D Highlight Curve -->
       <path d="M48 34C43 42 41 55 42 70" stroke="#ffffff" strokeWidth="4" strokeLinecap="round" strokeOpacity="0.7" />
       <path d="M52 32C50 36 49 44 50 54" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeOpacity="0.5" />
-
-      <!-- Bell Rim Base -->
       <ellipse cx="60" cy="81" rx="34" ry="7" fill="url(#bellRim)" />
-      
-      <!-- Bell Clapper Ball -->
       <ellipse cx="60" cy="87" rx="10" ry="8" fill="#a16207" />
       <ellipse cx="60" cy="86" rx="8" ry="6" fill="#facc15" />
-      
-      <!-- Notification Badge -->
       <circle cx="86" cy="30" r="14" fill="#ef4444" />
       <circle cx="86" cy="30" r="14" fill="url(#bellGlow)" opacity="0.3" />
       <text x="86" y="35" textAnchor="middle" fill="#ffffff" fontSize="13" fontWeight="900" fontFamily="Outfit, sans-serif">1</text>
@@ -68,19 +56,12 @@ export const TowTruckIllustration: React.FC<{ className?: string }> = ({ classNa
         <stop offset="100%" stopColor="#0f172a" />
       </linearGradient>
     </defs>
-    <!-- Ground Shadow -->
     <ellipse cx="50" cy="70" rx="42" ry="7" fill="#000" fillOpacity="0.4" />
-    
-    <!-- Flatbed Chassis -->
     <path d="M12 52L82 46L86 58L10 60Z" fill="#334155" />
-    
-    <!-- Tow Truck Cab -->
     <path d="M14 36C14 33 16 31 19 31H34L44 45V58H14V36Z" fill="url(#yellowCarGrad)" />
-    <!-- Cab Window -->
     <path d="M22 35H32L39 45H22V35Z" fill="url(#windowGrad)" />
     <path d="M24 37L35 44" stroke="#60a5fa" strokeWidth="1.5" strokeOpacity="0.6" />
     
-    <!-- Towed Car on Back -->
     <g transform="translate(38, 20) rotate(-6)">
       <path d="M6 24C6 22 8 20 11 19L24 15L36 18L44 24V32H6V24Z" fill="#fbbf24" />
       <path d="M14 20L22 17L30 19L33 24H12L14 20Z" fill="#0f172a" />
@@ -88,11 +69,9 @@ export const TowTruckIllustration: React.FC<{ className?: string }> = ({ classNa
       <circle cx="36" cy="32" r="5" fill="#1e293b" stroke="#f59e0b" strokeWidth="1.5" />
     </g>
 
-    <!-- Crane Boom Frame -->
     <path d="M46 30L62 14L66 18L50 34Z" fill="#eab308" />
     <line x1="62" y1="16" x2="74" y2="30" stroke="#f59e0b" strokeWidth="2.5" />
 
-    <!-- Wheels -->
     <circle cx="24" cy="60" r="8" fill="#090d16" stroke="#475569" strokeWidth="2" />
     <circle cx="24" cy="60" r="4" fill="#facc15" />
     <circle cx="70" cy="58" r="8" fill="#090d16" stroke="#475569" strokeWidth="2" />
@@ -113,17 +92,10 @@ export const RepairsIllustration: React.FC<{ className?: string }> = ({ classNam
       </linearGradient>
     </defs>
     <ellipse cx="50" cy="68" rx="40" ry="7" fill="#000" fillOpacity="0.4" />
-    
-    <!-- Car Body -->
     <path d="M18 54L22 42C24 35 30 30 38 29L64 30C72 30 78 35 80 42L84 54C85 58 82 62 78 62H24C20 62 17 58 18 54Z" fill="url(#repBody)" />
-    
-    <!-- Windshield -->
     <path d="M36 34H66L72 44H30L36 34Z" fill="#0f172a" />
-    
-    <!-- Open Bonnet (Lid Tilted Up) -->
     <path d="M22 42L12 24L38 22L36 34Z" fill="#fbbf24" stroke="#ca8a04" strokeWidth="1.5" />
     
-    <!-- Exposed Engine Smoke/Wrench -->
     <g transform="translate(18, 30)">
       <rect x="0" y="4" width="12" height="10" rx="2" fill="#334155" />
       <circle cx="6" cy="9" r="2" fill="#ef4444" />
@@ -132,11 +104,8 @@ export const RepairsIllustration: React.FC<{ className?: string }> = ({ classNam
       <circle cx="4" cy="-8" r="4" fill="#94a3b8" fillOpacity="0.4" />
     </g>
 
-    <!-- Wheels -->
     <circle cx="32" cy="60" r="7" fill="#090d16" stroke="#ca8a04" strokeWidth="2" />
     <circle cx="70" cy="60" r="7" fill="#090d16" stroke="#ca8a04" strokeWidth="2" />
-    
-    <!-- Tools -->
     <path d="M74 22L84 32M84 22L74 32" stroke="#f59e0b" strokeWidth="2.5" strokeLinecap="round" />
   </svg>
 );
@@ -146,20 +115,13 @@ export const FlatTyreIllustration: React.FC<{ className?: string }> = ({ classNa
   <svg className={className} viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
     <ellipse cx="50" cy="68" rx="40" ry="7" fill="#000" fillOpacity="0.4" />
     
-    <!-- Car tilted to left due to flat tyre -->
     <g transform="rotate(-7 50 50)">
       <path d="M18 52L24 38C26 33 32 29 40 29L66 30C74 30 79 35 82 41L86 52C87 56 84 60 80 60H22C18 60 16 56 18 52Z" fill="#facc15" />
       <path d="M34 33H68L73 42H28L34 33Z" fill="#0f172a" />
-      
-      <!-- Right Normal Wheel -->
       <circle cx="72" cy="56" r="8" fill="#1e293b" stroke="#eab308" strokeWidth="2" />
       <circle cx="72" cy="56" r="3" fill="#facc15" />
-      
-      <!-- Left Deflated/Flat Wheel -->
       <ellipse cx="28" cy="58" rx="9" ry="5" fill="#1e293b" stroke="#ef4444" strokeWidth="2" />
       <circle cx="28" cy="57" r="2.5" fill="#facc15" />
-      
-      <!-- Air hiss lines -->
       <path d="M14 55C10 52 8 50 6 52" stroke="#60a5fa" strokeWidth="2" strokeLinecap="round" />
       <path d="M16 60C11 60 8 62 6 60" stroke="#60a5fa" strokeWidth="2" strokeLinecap="round" />
     </g>
@@ -171,25 +133,19 @@ export const DeadBatteryIllustration: React.FC<{ className?: string }> = ({ clas
   <svg className={className} viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
     <ellipse cx="50" cy="68" rx="40" ry="7" fill="#000" fillOpacity="0.4" />
     
-    <!-- Car Body -->
     <path d="M20 54L26 40C28 35 34 31 42 31H64C72 31 78 35 80 40L86 54C87 58 84 62 80 62H24C20 62 18 58 20 54Z" fill="#facc15" />
     <path d="M36 35H66L72 44H30L36 35Z" fill="#0f172a" />
     
-    <!-- Battery Box with Sparks -->
     <g transform="translate(38, 14)">
       <rect x="0" y="6" width="24" height="16" rx="3" fill="#1e293b" stroke="#eab308" strokeWidth="1.5" />
       <rect x="4" y="2" width="4" height="4" rx="1" fill="#ef4444" />
       <rect x="16" y="2" width="4" height="4" rx="1" fill="#3b82f6" />
-      <!-- Lightning Bolt inside battery -->
       <path d="M13 8L9 14H13L11 20L17 13H13L15 8H13Z" fill="#facc15" />
-      
-      <!-- Electric Sparks -->
       <circle cx="-3" cy="6" r="1.5" fill="#60a5fa" />
       <path d="M-5 2L-2 6L-6 8" stroke="#60a5fa" strokeWidth="1.5" />
       <circle cx="28" cy="8" r="1.5" fill="#facc15" />
     </g>
     
-    <!-- Wheels -->
     <circle cx="32" cy="60" r="7" fill="#090d16" stroke="#ca8a04" strokeWidth="2" />
     <circle cx="72" cy="60" r="7" fill="#090d16" stroke="#ca8a04" strokeWidth="2" />
   </svg>
@@ -198,20 +154,16 @@ export const DeadBatteryIllustration: React.FC<{ className?: string }> = ({ clas
 // 3D Yellow Fluid Leakage Illustration
 export const FluidLeakageIllustration: React.FC<{ className?: string }> = ({ className = 'w-16 h-16' }) => (
   <svg className={className} viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- Puddle of Oil/Fuel -->
     <ellipse cx="48" cy="68" rx="44" ry="8" fill="#1e1b18" stroke="#d97706" strokeWidth="1.5" />
     <ellipse cx="44" cy="67" rx="20" ry="4" fill="#d97706" fillOpacity="0.4" />
     
-    <!-- Car Body -->
     <path d="M20 52L26 38C28 33 34 29 42 29H64C72 29 78 33 80 38L86 52C87 56 84 60 80 60H24C20 60 18 56 20 52Z" fill="#facc15" />
     <path d="M36 33H66L72 42H30L36 33Z" fill="#0f172a" />
     
-    <!-- Dripping drops -->
     <circle cx="48" cy="56" r="2.5" fill="#f59e0b" />
     <circle cx="48" cy="62" r="2" fill="#ea580c" />
     <circle cx="38" cy="58" r="1.5" fill="#f59e0b" />
     
-    <!-- Wheels -->
     <circle cx="30" cy="58" r="7" fill="#090d16" stroke="#ca8a04" strokeWidth="2" />
     <circle cx="74" cy="58" r="7" fill="#090d16" stroke="#ca8a04" strokeWidth="2" />
   </svg>
@@ -222,24 +174,17 @@ export const BrakeFailureIllustration: React.FC<{ className?: string }> = ({ cla
   <svg className={className} viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg">
     <ellipse cx="50" cy="68" rx="40" ry="7" fill="#000" fillOpacity="0.4" />
     
-    <!-- Car Body -->
     <path d="M20 52L26 38C28 33 34 29 42 29H64C72 29 78 33 80 38L86 52C87 56 84 60 80 60H24C20 60 18 56 20 52Z" fill="#facc15" />
     <path d="M36 33H66L72 42H30L36 33Z" fill="#0f172a" />
     
-    <!-- Glowing Red Brake Disc -->
     <g transform="translate(68, 48)">
       <circle cx="6" cy="6" r="10" fill="#ef4444" fillOpacity="0.2" />
       <circle cx="6" cy="6" r="8" fill="#1e293b" stroke="#ef4444" strokeWidth="2.5" />
-      <!-- Caliper -->
       <path d="M-1 0H7V6H-1Z" fill="#dc2626" />
-      <!-- Brake warning ! -->
       <circle cx="6" cy="6" r="3" fill="#ef4444" />
     </g>
     
-    <!-- Left Wheel -->
     <circle cx="30" cy="58" r="7" fill="#090d16" stroke="#ca8a04" strokeWidth="2" />
-    
-    <!-- Warning Sign -->
     <path d="M48 12L56 26H40L48 12Z" fill="#ef4444" stroke="#ffffff" strokeWidth="1" />
     <circle cx="48" cy="23" r="1" fill="#fff" />
     <line x1="48" y1="17" x2="48" y2="20" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" />
@@ -261,18 +206,13 @@ export const CuteMechanicMascot: React.FC<{ className?: string }> = ({ className
       </linearGradient>
     </defs>
     
-    <!-- Shadow -->
     <ellipse cx="50" cy="88" rx="36" ry="6" fill="#000000" fillOpacity="0.45" />
-    
-    <!-- Cute Rounded Car Head -->
     <rect x="22" y="32" width="56" height="46" rx="20" fill="url(#mascotBody)" />
     
-    <!-- Mechanic Cap / Sun Visor -->
     <path d="M26 34C26 22 36 14 50 14C64 14 74 22 74 34H26Z" fill="#eab308" />
     <path d="M20 34C20 30 32 28 50 28C68 28 80 30 80 34L76 38H24L20 34Z" fill="#ca8a04" />
     <path d="M44 20L56 20" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" strokeOpacity="0.8" />
     
-    <!-- Big Expressive Eyes -->
     <ellipse cx="38" cy="48" rx="10" ry="12" fill="url(#mascotEye)" stroke="#1e293b" strokeWidth="2" />
     <circle cx="40" cy="48" r="6" fill="#0f172a" />
     <circle cx="38" cy="45" r="2.5" fill="#ffffff" />
@@ -281,14 +221,9 @@ export const CuteMechanicMascot: React.FC<{ className?: string }> = ({ className
     <circle cx="60" cy="48" r="6" fill="#0f172a" />
     <circle cx="58" cy="45" r="2.5" fill="#ffffff" />
     
-    <!-- Cute Smile -->
     <path d="M42 66C46 71 54 71 58 66" stroke="#713f12" strokeWidth="3" strokeLinecap="round" fill="none" />
-    
-    <!-- Rosy Cheeks -->
     <circle cx="28" cy="60" r="4" fill="#f87171" fillOpacity="0.6" />
     <circle cx="72" cy="60" r="4" fill="#f87171" fillOpacity="0.6" />
-
-    <!-- Cute Wheel Feet -->
     <ellipse cx="18" cy="74" rx="6" ry="10" fill="#1e293b" stroke="#eab308" strokeWidth="2" />
     <ellipse cx="82" cy="74" rx="6" ry="10" fill="#1e293b" stroke="#eab308" strokeWidth="2" />
   </svg>
@@ -309,39 +244,23 @@ export const RedTowTruckVector: React.FC<{ className?: string }> = ({ className 
         <stop offset="100%" stopColor="#f8fafc" />
       </linearGradient>
     </defs>
-    <!-- Shadow -->
-    <ellipse cx="80" cy="80" rx="72" ry="7" fill="#000000" fillOpacity="0.6" />
     
-    <!-- Long Flatbed Back Bed (Silver/Steel) -->
+    <ellipse cx="80" cy="80" rx="72" ry="7" fill="#000000" fillOpacity="0.6" />
     <rect x="52" y="44" width="98" height="12" rx="2" fill="#475569" stroke="#64748b" strokeWidth="1" />
     <line x1="56" y1="48" x2="146" y2="48" stroke="#94a3b8" strokeWidth="1.5" strokeDasharray="4 2" />
     <rect x="144" y="40" width="8" height="20" rx="1" fill="#334155" />
-
-    <!-- Red Cab Front -->
     <path d="M12 66V48C12 44 15 42 18 42H28L36 24C38 20 42 18 48 18H58C62 18 66 21 66 26V66H12Z" fill="url(#redCab)" />
-    
-    <!-- Cab Windows -->
     <path d="M38 26H56V42H30L38 26Z" fill="#0f172a" stroke="#1e293b" strokeWidth="1" />
     <path d="M42 28L54 40" stroke="#93c5fd" strokeWidth="1.5" strokeOpacity="0.7" />
-    
-    <!-- Big Chrome Front Grill -->
     <rect x="10" y="46" width="6" height="20" rx="1" fill="url(#chromeGrill)" />
     <circle cx="13" cy="50" r="1.5" fill="#fef08a" />
-    
-    <!-- Exhaust Stack -->
     <rect x="62" y="10" width="3" height="30" rx="1" fill="#cbd5e1" />
     <path d="M62 10C62 8 64 6 66 6H68" stroke="#cbd5e1" strokeWidth="2" />
-    
-    <!-- Roof Emergency Amber Beacon Lights -->
     <rect x="42" y="15" width="14" height="3" rx="1" fill="#f59e0b" />
     <circle cx="45" cy="16" r="1" fill="#fef08a" />
     <circle cx="53" cy="16" r="1" fill="#fef08a" />
-    
-    <!-- Front Wheels -->
     <circle cx="30" cy="70" r="11" fill="#0f172a" stroke="#334155" strokeWidth="3" />
     <circle cx="30" cy="70" r="5" fill="#94a3b8" />
-    
-    <!-- Rear Dual Axle Wheels -->
     <circle cx="98" cy="70" r="11" fill="#0f172a" stroke="#334155" strokeWidth="3" />
     <circle cx="98" cy="70" r="5" fill="#94a3b8" />
     <circle cx="126" cy="70" r="11" fill="#0f172a" stroke="#334155" strokeWidth="3" />
@@ -367,26 +286,16 @@ export const VehicleGraphic: React.FC<{ modelId: string; className?: string }> =
               <stop offset="100%" stopColor="#0284c7" />
             </linearGradient>
           </defs>
-          <!-- Ground Shadow with cyan ambient EV glow -->
           <ellipse cx="170" cy="140" rx="145" ry="12" fill="#000" fillOpacity="0.7" />
           <ellipse cx="170" cy="140" rx="120" ry="6" fill="#38bdf8" fillOpacity="0.15" />
-          
-          <!-- Aerodynamic Body -->
           <path d="M25 108C25 102 32 94 48 92L82 88L130 52C145 42 165 38 195 38H230C258 38 275 48 290 68L318 94C326 98 330 104 330 110L326 122C324 126 318 128 310 128H40C30 128 25 120 25 108Z" fill="url(#taycanPaint)" />
-          
-          <!-- Sleek Coupe Glasshouse -->
           <path d="M125 56L185 44H225C248 44 262 52 274 68L290 86H105L125 56Z" fill="#090d16" stroke="#334155" strokeWidth="1" />
           <path d="M140 54L260 76" stroke="#38bdf8" strokeWidth="1.5" strokeOpacity="0.4" />
-          
-          <!-- Taycan Matrix LED Quad Headlights (Electric Blue) -->
           <path d="M308 94L322 96L316 102L304 98Z" fill="#38bdf8" />
           <circle cx="312" cy="97" r="2" fill="#ffffff" />
-          
-          <!-- Aerodynamic Side Inlets & Accent Lines -->
           <path d="M288 98L270 116" stroke="#38bdf8" strokeWidth="2" strokeLinecap="round" />
           <path d="M70 104H140" stroke="#f1f5f9" strokeWidth="1" strokeOpacity="0.4" />
           
-          <!-- 21-inch Mission E Aero Wheels -->
           <g transform="translate(75, 122)">
             <circle cx="0" cy="0" r="24" fill="#090d16" stroke="#475569" strokeWidth="4" />
             <circle cx="0" cy="0" r="16" fill="#1e293b" stroke="#38bdf8" strokeWidth="2" />
@@ -421,19 +330,12 @@ export const VehicleGraphic: React.FC<{ modelId: string; className?: string }> =
             </linearGradient>
           </defs>
           <ellipse cx="170" cy="140" rx="145" ry="12" fill="#000" fillOpacity="0.7" />
-          
-          <!-- BMW Sedan Body -->
           <path d="M22 108C22 100 28 92 45 90L85 86L135 48C148 40 170 36 200 36H240C265 36 280 44 294 62L320 88C328 94 332 100 332 108L328 122C325 126 318 128 310 128H40C28 128 22 120 22 108Z" fill="url(#bmwPaint)" />
-          
-          <!-- Windows & Hofmeister Kink -->
           <path d="M130 52L190 42H235C255 42 268 48 278 62L292 82H110L130 52Z" fill="#090d16" stroke="#475569" strokeWidth="1" />
           <path d="M142 50L265 74" stroke="#60a5fa" strokeWidth="1.5" strokeOpacity="0.5" />
-          
-          <!-- BMW Twin Kidney Grill & Angle Eyes -->
           <rect x="318" y="90" width="10" height="14" rx="4" fill="url(#kidneyGrill)" stroke="#1e293b" strokeWidth="1" />
           <path d="M304 88L316 90L312 94L300 92Z" fill="#fef08a" />
           
-          <!-- Wheels -->
           <g transform="translate(75, 122)">
             <circle cx="0" cy="0" r="24" fill="#090d16" stroke="#475569" strokeWidth="4" />
             <circle cx="0" cy="0" r="16" fill="#1e293b" stroke="#e2e8f0" strokeWidth="2" />
@@ -458,14 +360,11 @@ export const VehicleGraphic: React.FC<{ modelId: string; className?: string }> =
             </linearGradient>
           </defs>
           <ellipse cx="170" cy="140" rx="145" ry="12" fill="#000" fillOpacity="0.7" />
-          <!-- High Stance Compact SUV -->
           <path d="M25 104C25 94 34 86 50 84L90 80L125 44C138 34 158 32 185 32H235C258 32 272 40 284 56L315 84C324 90 328 98 328 106L324 122C322 126 315 128 305 128H45C32 128 25 118 25 104Z" fill="url(#nexonPaint)" />
-          <!-- White Dual-tone Roof -->
           <path d="M125 44C138 34 158 32 185 32H235C258 32 272 40 284 56L288 64H116L125 44Z" fill="#ffffff" />
           <path d="M128 50L185 40H230C250 40 262 46 272 58L285 76H112L128 50Z" fill="#0f172a" />
-          <!-- Connected LED DRL Bar -->
           <line x1="290" y1="84" x2="322" y2="88" stroke="#34d399" strokeWidth="3" strokeLinecap="round" />
-          <!-- SUV Wheels -->
+          
           <g transform="translate(80, 122)">
             <circle cx="0" cy="0" r="25" fill="#090d16" stroke="#334155" strokeWidth="4" />
             <circle cx="0" cy="0" r="16" fill="#1e293b" stroke="#34d399" strokeWidth="2" />
@@ -490,16 +389,12 @@ export const VehicleGraphic: React.FC<{ modelId: string; className?: string }> =
             </linearGradient>
           </defs>
           <ellipse cx="170" cy="140" rx="145" ry="12" fill="#000" fillOpacity="0.7" />
-          <!-- Bold SUV Silhouette -->
           <path d="M22 102C22 92 30 84 48 82L88 80L122 42C136 32 156 30 188 30H242C266 30 280 38 292 54L320 84C328 90 332 98 332 106L328 122C324 126 316 128 306 128H42C30 128 22 118 22 102Z" fill="url(#suvPaint)" />
-          <!-- SUV Glass Cabin -->
           <path d="M125 46L185 38H236C256 38 268 44 278 56L294 76H110L125 46Z" fill="#0f172a" stroke="#475569" strokeWidth="1" />
           <path d="M136 44L266 68" stroke="#fde047" strokeWidth="1.5" strokeOpacity="0.4" />
-          <!-- Roof Rails -->
           <path d="M130 26H250" stroke="#cbd5e1" strokeWidth="3" strokeLinecap="round" />
-          <!-- Headlights -->
           <path d="M304 84L322 88L316 94L298 90Z" fill="#fef08a" />
-          <!-- Bold Machined Alloys -->
+          
           <g transform="translate(80, 122)">
             <circle cx="0" cy="0" r="26" fill="#090d16" stroke="#475569" strokeWidth="4" />
             <circle cx="0" cy="0" r="17" fill="#1e293b" stroke="#fbbf24" strokeWidth="2.5" />
