@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-dark: #090d15;
+    --bg-card: #121722;
+    --brand-yellow: #f5a623;
+    --brand-gold: #fbb034;
+  }
+
+  body {
+    background-color: #090d15;
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(18, 23, 34, 0.6);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(245, 166, 35, 0.35);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 166, 35, 0.6);
+}
+
+/* Leaflet Dark Matter Custom Overrides */
+.leaflet-container {
+  background: #0b0f19 !important;
+  font-family: 'Plus Jakarta Sans', sans-serif !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #121722 !important;
+  color: #fff !important;
+  border-radius: 16px !important;
+  border: 1px solid rgba(245, 166, 35, 0.4) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.8) !important;
+}
+
+.leaflet-popup-tip {
+  background: #121722 !important;
+}
+
+/* Pulsing Custom Marker Animation */
+.custom-user-marker,
+.custom-provider-marker,
+.driver-live-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* Glassmorphic Utilities */
+.glass-panel {
+  background: rgba(18, 23, 34, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-dropdown {
+  background: rgba(14, 19, 29, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(245, 166, 35, 0.25);
+}
+
+/* Smooth Fade and Slide Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
