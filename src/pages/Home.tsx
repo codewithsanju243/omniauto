@@ -200,7 +200,7 @@ export const Home: React.FC = () => {
                       <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
                       Technician Dispatched & En Route
                     </span>
-                    <span className="text-xs text-slate-400 font-mono">Ref: {activeBooking.bookingId}</span>
+                    <span className="text-xs text-slate-400 font-mono">Ref: {activeBooking.id}</span>
                   </div>
                   <h2 className="text-xl sm:text-2xl font-black text-white mt-1">
                     {activeBooking.serviceTitle} — {activeBooking.vehicle.name}

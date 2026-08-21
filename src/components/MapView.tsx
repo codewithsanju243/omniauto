@@ -50,7 +50,7 @@ export const MapView: React.FC<MapViewProps> = ({
   // Filter providers according to active tab
   const filteredProviders = MOCK_PROVIDERS.filter((p) => {
     if (activeFilter === 'ALL') return true;
-    if (activeFilter === 'Mechanics') return p.type === 'Mechanic';
+    if (activeFilter === 'Mechanic') return p.type === 'Mechanic';
     if (activeFilter === 'Towing') return p.type === 'Towing';
     if (activeFilter === 'EV Charging') return p.type === 'EV Charging';
     if (activeFilter === 'Fuel') return p.type === 'Fuel';
